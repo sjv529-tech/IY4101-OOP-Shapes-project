@@ -23,8 +23,8 @@ public class coordinates {
     }
 
     public void translate(int dx, int dy) {
-        this.x = this.x + dx;  // Add dx to current x
-        this.y = this.y + dy;  // Add dy to current y
+        this.x = this.x + dx;
+        this.y = this.y + dy;
     }  
 
         public void scale(int factor, boolean sign) {
@@ -33,7 +33,6 @@ public class coordinates {
             this.x = this.x * factor;
             this.y = this.y * factor;
         } else {
-            // Divide (make sure we don't divide by zero!)
             if (factor != 0) {
                 this.x = this.x / factor;
                 this.y = this.y / factor;
